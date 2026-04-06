@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>會員登入</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="container-center">
+        <div class="card">
+            <h2>會員登入</h2>
+            <form action="login.php" method="POST">
+                <label>信箱：</label>
+                <input type="email" name="email" required>
+
+                <label>密碼：</label>
+                <input type="password" name="password" required>
+
+                <button type="submit" class="btn-primary">登入</button>
+            </form>
+            <a href="forgot_password.php">忘記密碼？</a>
+            <a href="register.html">還沒有帳號？註冊</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* 登入/註冊頁面專用 */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 一般頁面 body（不置中）*/
+body.page {
+    display: block;
+    height: auto;
+}
+
+/* ==================
+   登入/註冊頁面專用
+   ================== */
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+/* ==================
+   一般頁面容器
+   ================== */
+.container {
+    background-color: white;
+    padding: 32px;
+    margin: 32px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 960px;
+    width: 90%;       
+}
+
+/* ==================
+   標題
+   ================== */
+h2 {
+    margin-bottom: 24px;
+    color: #333;
+}
+
+h3 {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ==================
+   表單元素
+   ================== */
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ==================
+   按鈕
+   ================== */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-add {
+    background: #4f6ef7;
+    color: #fff;
+}
+
+.btn-del {
+    background: #e74c3c;
+    color: #fff;
+}
+
+/* ==================
+   表格
+   ================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f5f5f5;
+    font-weight: 500;
+}
+
+tr:hover {
+    background: #fafafa;
+}
+
+/* ==================
+   訊息提示
+   ================== */
+.success {
+    background-color: #e0ffe0;
+    border: 1px solid #aaffaa;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 16px;
+    color: #006600;
+    font-size: 14px;
+}
+
+.error {
+    background-color: #ffe0e0;
+    border: 1px solid #ffaaaa;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 16px;
+    color: #cc0000;
+    font-size: 14px;
+}
+
+/* ==================
+   連結
+   ================== */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==================
+   Tag 標籤（權限頁用）
+   ================== */
+.tag {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #e8f0fe;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 2px;
+    color: #3a5bc7;
+}
+
+/* ==================
+   管理員選單卡片
+   ================== */
+.admin-menu {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.admin-card {
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    width: 160px;
+    display: block;
+}
+
+.admin-card:hover {
+    background: #f0f4ff;
+    text-decoration: none;
+}
+
+.admin-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.admin-card p {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+/* ==================
+   表單排版
+   ================== */
+.form-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    align-items: flex-end;
+}
+
+.section {
+    margin-top: 32px;
+}
